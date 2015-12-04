@@ -1,6 +1,6 @@
 
 <p align="right">
-    <a href="https://github.com/katzer/cordova-plugin-background-mode/tree/example">EXAMPLE :point_right:</a>
+    <a href="https://github.com/cvuser0/cordova-plugin-background-mode/tree/example">EXAMPLE :point_right:</a>
 </p>
 
 Cordova Background Plug-in
@@ -40,7 +40,7 @@ The plugin can either be installed from git repository, from local file system t
 From master:
 ```bash
 # ~~ from master branch ~~
-cordova plugin add https://github.com/katzer/cordova-plugin-background-mode.git
+cordova plugin add https://github.com/cvuser0/cordova-plugin-background-mode.git
 ```
 from a local folder:
 ```bash
@@ -110,7 +110,7 @@ document.addEventListener('deviceready', function () {
 ```
 
 ### Prevent the app from going to sleep in background
-To prevent the app from being paused while in background, the `backroundMode.enable` interface has to be called.
+To prevent the app from being paused while in background, the `backgroundMode.enable` interface has to be called.
 
 #### Further informations
 - The background mode will be activated once the app has entered the background and will be deactivated after the app has entered the foreground.
