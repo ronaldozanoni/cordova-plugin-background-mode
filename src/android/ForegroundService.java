@@ -193,9 +193,14 @@ public class ForegroundService extends Service {
     }
 
     public void updateNotification() {
-        Notification n = makeNotification();
         NotificationManager mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-        mNotificationManager.notify(NOTIFICATION_ID, n);
+        
+        if (this.inSilentMode()) {
+            mNotificationManager.cancel(NOTIFICATION_ID);
+        } else {
+            Notification n = makeNotification();
+            mNotificationManager.notify(NOTIFICATION_ID, n);
+        }
     }
 
     /**
